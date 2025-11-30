@@ -50,7 +50,7 @@ hp_regen_timer = 0
 game_time_limit = 300 
 current_game_time = 300
 
-card = Entity(parent=camera, model='card_key.obj', collider='mesh', scale=(0.2,0.2,0.2), position=(0.6,-0.5,1.5), rotation=(5,0,-90), enabled=False)
+card = Entity(parent=camera, model='card_key.obj', scale=(0.2,0.2,0.2), position=(0.6,-0.5,1.5), rotation=(5,0,-90), color=color.cyan, enabled=False)
 gun = Entity(parent=camera, model='gun.obj', scale=Vec3(0.2,0.2,0.2), position=Vec3(0.55,-0.85,1.5), rotation=(-5,-10,0), color=color.white, shader=matcap_shader, texture='metal_matcap_gun.jpg', enabled=False)
 gun.muzzle = Entity(parent=gun, position=Vec3(-2.2,3.8,gun.scale_z/2+1), rotation=(-5,-10,0))
 gun.original_position = gun.position
